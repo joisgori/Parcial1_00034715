@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maxisun's</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+        <link rel="stylesheet" href="nombrearchivo.css"
+
+        Acá mismos hago la importación de estilos de letras e íconos a utilizar con el link que proporcionan fontawesome y eso.
+
+    -->
+</head>
+
+<body>
+    <nav>
+        <ul class="contenedor-flex-nav">
+            <li>Home</li>
+            <li>Album</li>
+            <figure>
+                <img class="logo" src="imagenes/logo.png">
+            </figure>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <!--
+        podría hacer uso del body como un grid container, o un flex, aunque preferiblemente el primero para ubicar mejor los bloques
+    -->
+    <header class="cabecera">
+        <!--Este vendría a ser el bloque principal, un bloque donde puedo colocar mis logos, título de la página con h1 y un ul con li para hacer los nav-->
+        <h1>Maxisun's</h1>
+        <h2>The best studio fulltime</h2>
+        <div>V</div>
+    </header>
+    <!--Recordando que puedo hacer uso de clases (cuantas quiera) y atributos principales (id)
+    A su vez, recordar que si daré tratos de grid o flex debo aplicarlos al contenedor de los elementos que deseo manipular
+    -->
+
+
+
+    <!--Section donde iría mi información principal y seguido a este bloque colocar el aside, podría incluso hacer uso de un div donde
+    colocar section y adide para hacer uso de ese div como un contenedor y aplicar grid con una cantidad de columnas que se distribuirían en tamaños
+    porcentuales, puede ser que mi section sea de 80% mientras el aside del 20% y así...
+    dentro del section puedo colocar los articles.
+    recordando que podemos colocar cabeceras (headers) dentro de nuevas secciones como article o cuestiones así, donde se deberá hacer uso de los
+    hgroup para contener esos títulos que se representarían con los h1, h2 contenidos en esa etiqueta para diferenciarlos de los principales de la paǵinas.
+    -->
+    <div class="seccion">
+        <section class="SeContenedor">
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture1.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture2.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture3.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture4.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture5.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+            <div class="bloque">
+                <div class="figjust">
+                    <img class="imajust" src="imagenes/feauture6.jpg">
+                </div>
+                <h3>El título de cada bloque (subtí)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ducimus consequuntur sunt,
+                    molestiae
+                    deleniti repellat provident.</p>
+                <button class="B2">READ MORE</button>
+            </div>
+
+        </section>
+    </div>
+
+    <!--
+        Recordando que si deseo colocar imágenes debo hacer uso de los llamados "figure" etiquetas para ese contenido en específico.
+        colocando dentro de esto el <img con su scr ="" > y luego un figcaption si es que lo necesita, como subtítulos de imágenes.
+
+
+    -->
+
+    <footer>
+        <!--<img class="footim" src="imagenes/contacus.jpg"> -->
+        <div class="foodiv Form">
+            <p>Nombre</p>
+            <input type="text" placeholder="josue">
+            <p>Correo</p>
+            <input type="text" placeholder="00034715@uca.edu.sv">
+            <p>Comentarios</p>
+            <input type="text" placeholder="Escriba aqui">
+            <input type="button" value="Contact">
+        </div>
+        <div class="foodiv Descri">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem expedita sequi aspernatur consectetur
+                aliquam adipisci dolor ut, non nulla dicta, rerum commodi? Veniam accusamus distinctio aperiam eligendi
+                quod quaerat debitis.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!--
+<aside>
+    <p>
+        blabla, recordar ,la teoría de flex y grid para manipular sus contenidos.
+    </p>
+</aside>
+Referente a mi parte final del documento, poseo mi footer, donde irían datos como referencias 
+a links de redes sociales o algún pequeño formulario con el llenado de inputs y cosas así...
+-->

@@ -1,0 +1,177 @@
+/*
+para entrar a etiquetas de manera general, basta colocar su nombre y abrir llaves;
+etiqueta {}
+clases, es necesario abrir con punto y seguido el nombre  de las clases;
+.MiClase {}
+id, es necesario hacer uso del numeral
+#MiID {}
+-----
+Se puede hacer uso de speudoclases para hacer referencias a hijos directos en especfíco:
+p:nth-child() --> dentro de paréntesis iría número (el número del hijo), o un even, u odd...
+acá se leería que afectaría a los elementos p que son hijos de otro elemento...
+Se puede hacer uso del ----> first-child, last-child, only-child, etc.
+una pseudoclase :not() ...
+-----
+selectores ">" ooooo "+" ooooo "~";
+
+
+
+una propiedad que puedo colocar en un
+etiqueta:hover{
+    background-color: #color;   
+    transition : background-color .3s ease-in;
+}
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+}
+
+
+.contenedor-flex-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+figure{
+    height: 7px;
+}
+
+.logo{
+    object-fit: cover;
+    height: 49px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 450px;
+    background-image: url("imagenes/fondo.jpg");
+    background-size: cover;
+}
+
+.seccion{
+    width: 100%;
+    height: 1fr;
+    margin: 0.6em;
+    background: rgba(245, 245, 245, 0.335);
+}
+
+
+.SeContenedor{
+    margin: 0;
+    padding: 6px;
+    /*Afectará por tanto a sus hijos directos*/
+    display: grid;
+    /*Necesito tres columnas y dos filas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /*Y una separación entre las mismas que se las doy con grid-column/row-gap*/
+    grid-row-gap: 4px;
+    grid-column-gap: 4px;
+}
+
+
+.bloque{
+    background: #dbdada;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque button{
+    padding: 16px;
+    margin: 16px;
+}
+
+.bloque p{
+    text-align: center;
+}
+
+.figjust{
+    margin: 0%;
+    width: 100%;
+}
+
+.imajust{
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+
+button{
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    background: orange;
+    color: white;
+
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url("imagenes/contacus.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foodiv{
+    margin: 2em;
+    padding: 2em;
+}
+
+.Form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Descri{
+    width: 600px;
+}
+
+/*
+.footim{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+} */
+
+/*
+#f5f5f5
+#000000
+#fff
+blue
+#dbdada
+#612e1d
+#13131342
+#440d5a
+#fef6f4
+rgba(245, 245, 245, 0.335)
+rgba(109, 104, 104, 0.801)
+*/
